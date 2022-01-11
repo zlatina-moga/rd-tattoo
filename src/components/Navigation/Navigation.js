@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
+
 export default function Navigation(){
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
 
-            <a className="navbar-brand" href="index.html">RD TATTOO</a>
+            <a className="navbar-brand" href="/">RD TATTOO</a>
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -13,11 +15,11 @@ export default function Navigation(){
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-lg-auto">
                     <li className="nav-item">
-                        <a href="#home" className="nav-link smoothScroll">Home</a>
+                        <Link to="/" className="nav-link smoothScroll">Home</Link>
                     </li>
 
                     <li className="nav-item">
-                        <a href="#about" className="nav-link smoothScroll">About Us</a>
+                        <Link to="/about" className="nav-link smoothScroll">About Us</Link>
                     </li>
 
                     <li className="nav-item">
@@ -29,7 +31,7 @@ export default function Navigation(){
                     </li>
 
                     <li className="nav-item">
-                        <a href="#contact" className="nav-link smoothScroll">Contact</a>
+                        <Link to="/contact" className="nav-link smoothScroll">Contact</Link>
                     </li>
                 </ul>
 

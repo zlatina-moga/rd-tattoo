@@ -33,7 +33,7 @@ export default function Contact() {
                       <p data-aos="fade-up" data-aos-delay="800"><i className="fa fa-map-marker mr-1"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil</p>
 
                       <div className="google-map" data-aos="fade-up" data-aos-delay="900">
-                         <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                         <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ" width="1920" height="250" frameBorder="0" style={{border:0}} allowFullScreen=""></iframe>
                       </div>
                   </div>
                   
