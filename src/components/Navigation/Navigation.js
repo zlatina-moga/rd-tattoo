@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom"
-
 export default function Navigation(){
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
@@ -14,12 +12,9 @@ export default function Navigation(){
 
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-lg-auto">
-                    <li className="nav-item">
-                        <Link to="/" className="nav-link smoothScroll">Home</Link>
-                    </li>
 
                     <li className="nav-item">
-                        <Link to="/about" className="nav-link smoothScroll">About Us</Link>
+                        <a href="/about" className="nav-link smoothScroll">About Us</a>
                     </li>
 
                     <li className="nav-item">
@@ -27,11 +22,11 @@ export default function Navigation(){
                     </li>
 
                     <li className="nav-item">
-                        <a href="#schedule" className="nav-link smoothScroll">Schedules</a>
+                        <a href="#schedule" className="nav-link smoothScroll">Gallery</a>
                     </li>
 
                     <li className="nav-item">
-                        <Link to="/contact" className="nav-link smoothScroll">Contact</Link>
+                        <a href="/contact" className="nav-link smoothScroll">Contact</a>
                     </li>
                 </ul>
 
