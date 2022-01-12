@@ -11,7 +11,7 @@ export default function Home() {
 
                                 <h6 data-aos="fade-up" data-aos-delay="300">new way to build a lifestyle!</h6>
 
-                                <h1 className="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at RD Tattoo</h1>
+                                <h1 className="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at RD Tattoo & Piercing</h1>
 
                                 <a href="#feature" className="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>
 
