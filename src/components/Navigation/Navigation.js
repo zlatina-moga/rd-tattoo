@@ -18,7 +18,7 @@ export default function Navigation(){
                     </li>
 
                     <li className="nav-item">
-                        <a href="#class" className="nav-link smoothScroll">Classes</a>
+                        <a href="/classes" className="nav-link smoothScroll">Classes</a>
                     </li>
 
                     <li className="nav-item">
