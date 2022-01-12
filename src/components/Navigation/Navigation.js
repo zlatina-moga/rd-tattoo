@@ -36,9 +36,9 @@ export default function Navigation(){
                 </ul>
 
                 <ul className="social-icon ml-lg-3">
-                    <li><a href="https://fb.com/tooplate" className="fa fa-facebook"></a></li>
-                    <li><a href="#" className="fa fa-twitter"></a></li>
-                    <li><a href="#" className="fa fa-instagram"></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/rdtattoois/" className="fa fa-facebook"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/rdtattooist/" className="fa fa-instagram"></a></li>
+                    <li><a href="tel:+421904540178"><i className="fa fa-phone"></i></a></li>
                 </ul>
             </div>
 
