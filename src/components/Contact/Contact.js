@@ -1,13 +1,35 @@
-export default function Contact() {
+import { useState } from "react";
 
-    /*
-    <!-- How to change your own map point
-  1. Go to Google Maps
-  2. Click on your location point
-  3. Click "Share" and choose "Embed map" tab
-  4. Copy only URL and paste it within the src="" field below
-    -->*/
-    
+export default function Contact() {
+    const [state, setState] = useState({feedback: '', name: 'Name', email: 'email@example.com'})
+
+    const handleChange = (e) => {
+        setState({feedback: e.currentTarget.value})
+    }
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+
+        const templateId = 'template_urtsbj7';
+
+        const formData = new FormData(e.currentTarget);
+        let name = formData.get('cf-name');
+        let email = formData.get('cf-email');
+        let message = formData.get('cf-message');
+
+        sendFeedback(templateId, {message: message, from_name: name, reply_to: email})
+    }
+
+    const sendFeedback = (templateId, variables) => {
+        window.emailjs.send(
+            'service_zof2wa4', templateId,
+            variables
+        ).then (res => {
+            console.log('Email successfully sent!')
+            //add cool notification window
+        }).catch(err => console.error('Sorry, something went wrong: ', err))
+    }
+
     return (
         <section className="contact section" id="contact">
         <div className="container">
@@ -16,12 +38,12 @@ export default function Contact() {
                   <div className="ml-auto col-lg-5 col-md-6 col-12">
                       <h2 className="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
 
-                      <form action="#" method="post" className="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                      <form onSubmit={onSubmit} className="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
                           <input type="text" className="form-control" name="cf-name" placeholder="Name" />
 
                           <input type="email" className="form-control" name="cf-email" placeholder="Email" />
 
-                          <textarea className="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+                          <textarea onChange={handleChange} defaultValue={state.feedback} className="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
 
                           <button type="submit" className="form-control" id="submit-button" name="submit">Send Message</button>
                       </form>
