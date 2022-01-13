@@ -13,10 +13,13 @@ export default function Footer() {
                   <div className="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
                       <p className="mr-4">
                           <i className="fa fa-envelope-o mr-1"></i>
-                          <a href="#">rdtats@gmail.com</a>
+                          <a href="mailto:rdtats@gmail.com">rdtats@gmail.com</a>
                       </p>
 
-                      <p><i className="fa fa-phone mr-1"></i> +421904540178</p>
+                      <p>
+                          <i className="fa fa-phone mr-1"></i>
+                          <a href="tel:+421904540178">+421904540178</a>
+                        </p>
                   </div>
                   
              </div>

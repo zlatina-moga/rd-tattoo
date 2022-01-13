@@ -9,9 +9,11 @@ export default function About(){
 
                          <p data-aos="fade-up" data-aos-delay="400">Our goal is to be your friend and an ally in the ruthless and dynamic world of tattoos.
 
-                            You are welcome with an idea in mind, and we'll be happy to assist you.</p>
+                            You are welcome with an idea in mind, and we'll be happy to assist you.
+                            If you need inspiration, you can rely on us - we will prepare a unique sketch, tailored to your wish.</p>
 
                          <p data-aos="fade-up" data-aos-delay="500">If you have any questions, you can <a rel="nofollow" href="tel:+421904540178" target="_parent">contact us</a> immediately.</p>
+                         <a href="tel:+421904540178" className="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm"><i className="fa fa-phone"></i> Make an appointment today</a>
 
                      </div>
 
@@ -22,7 +24,7 @@ export default function About(){
                              <div className="team-info d-flex flex-column">
 
                                  <h3>Rumen Dimov</h3>
-                                 <span>Tattoo artist</span>
+                                 <span>Tattoo and body artist</span>
 
                                  <ul className="social-icon mt-3">
                                      <li><a target="_blank" href="https://www.facebook.com/rdtattoois/" className="fa fa-facebook"></a></li>

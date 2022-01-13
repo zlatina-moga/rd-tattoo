@@ -36,7 +36,7 @@ export default function Home() {
 
                             <p data-aos="fade-up" data-aos-delay="200">If you need inspiration, you can rely on us - we will prepare a unique sketch, tailored to your wish.</p>
 
-                            <a href="#" className="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Make an appointment today</a>
+                            <a href="tel:+421904540178" className="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm"><i className="fa fa-phone"></i> Make an appointment today</a>
                         </div>
 
                         <div className="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
