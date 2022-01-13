@@ -1,7 +1,9 @@
 import { useState } from "react";
+import {useHistory} from 'react-router-dom';
 
 export default function Contact() {
-    const [state, setState] = useState({feedback: '', name: 'Name', email: 'email@example.com'})
+    const [state, setState] = useState({feedback: '', name: 'Name', email: 'email@example.com'});
+    const history = useHistory()
 
     const handleChange = (e) => {
         setState({feedback: e.currentTarget.value})
@@ -15,9 +17,10 @@ export default function Contact() {
         const formData = new FormData(e.currentTarget);
         let name = formData.get('cf-name');
         let email = formData.get('cf-email');
+        let phone = formData.get('cf-phone')
         let message = formData.get('cf-message');
 
-        sendFeedback(templateId, {message: message, from_name: name, reply_to: email})
+        sendFeedback(templateId, {message: message, phone: phone, from_name: name, reply_to: email})
     }
 
     const sendFeedback = (templateId, variables) => {
@@ -27,6 +30,7 @@ export default function Contact() {
         ).then (res => {
             console.log('Email successfully sent!')
             //add cool notification window
+            history.push('/gallery')
         }).catch(err => console.error('Sorry, something went wrong: ', err))
     }
 
@@ -42,6 +46,8 @@ export default function Contact() {
                           <input type="text" className="form-control" name="cf-name" placeholder="Name" />
 
                           <input type="email" className="form-control" name="cf-email" placeholder="Email" />
+
+                          <input type="tel" className="form-control" name="cf-phone" placeholder="Phone" />
 
                           <textarea onChange={handleChange} defaultValue={state.feedback} className="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
 

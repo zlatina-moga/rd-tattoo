@@ -22,7 +22,7 @@ export default function Navigation(){
                     </li>
 
                     <li className="nav-item">
-                        <a href="#schedule" className="nav-link smoothScroll">Gallery</a>
+                        <a href="/gallery" className="nav-link smoothScroll">Gallery</a>
                     </li>
 
                     <li className="nav-item">
