@@ -1,9 +1,11 @@
 import { useState } from "react";
 import {useHistory} from 'react-router-dom';
+import { useNotificationContext, types } from "../../contexts/NotificationContext";
 
 export default function Contact() {
     const [state, setState] = useState({feedback: '', name: 'Name', email: 'email@example.com'});
     const history = useHistory()
+    const {addNotification} = useNotificationContext()
 
     const handleChange = (e) => {
         setState({feedback: e.currentTarget.value})
@@ -29,8 +31,9 @@ export default function Contact() {
             variables
         ).then (res => {
             console.log('Email successfully sent!')
+            addNotification('Email successfully sent!', types.success)
             //add cool notification window
-            history.push('/gallery')
+            //history.push('/gallery')
         }).catch(err => console.error('Sorry, something went wrong: ', err))
     }
 
