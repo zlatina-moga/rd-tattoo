@@ -9,7 +9,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Classes from './components/Classes/Classes';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
