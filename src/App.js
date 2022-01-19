@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Classes from './components/Classes/Classes';
+import UploadForm from './components/UploadForm/UploadForm';
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about' component={About}/>
         <Route path='/contact' component={Contact}/>
         <Route path='/classes' component={Classes} />
+        <Route path='/gallery' component={UploadForm} />
       </Switch>
 
       <Footer />
