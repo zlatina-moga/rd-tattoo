@@ -1,10 +1,12 @@
 import { useState } from "react";
 import ProgressBar from "../Common/ProgressBar";
 import ImageGrid from "./ImageGrid";
+import Modal from "./Modal";
 
-export default function UploadForm(){
+export default function Gallery(){
     const [file, setFile] = useState(null);
-    const [error, setError] = useState(null)
+    const [error, setError] = useState(null);
+    const [selectedImg, setSelectedImg] = useState(null);
 
     const types = ['image/png', 'image/jpeg']
 
@@ -22,17 +24,21 @@ export default function UploadForm(){
     }
 
     return (
-        <>
-        <h1>Upload</h1>
-        <form>
-            <input type="file" onChange={changeHandler}/>
+        <div className="gallery">
+        <form className="gallery-form">
+            <label className="gallery-form-label">
+                <input type="file" onChange={changeHandler}/>
+                <span>+</span>
+            </label>
+            
             <div className="output">
                 { error && <div className="error">{ error }</div> }
                 {file && <div>{file.name}</div>}
                 {file && <ProgressBar file={file} setFile={setFile} />}
             </div>
         </form>
-        <ImageGrid />
-        </>
+        <ImageGrid setSelectedImg={setSelectedImg}/>
+        { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/> }
+        </div>
     )
 }
