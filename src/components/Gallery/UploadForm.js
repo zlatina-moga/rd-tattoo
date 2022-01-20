@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ProgressBar from "../Common/ProgressBar";
+import ImageGrid from "./ImageGrid";
 
 export default function UploadForm(){
     const [file, setFile] = useState(null);
@@ -31,6 +32,7 @@ export default function UploadForm(){
                 {file && <ProgressBar file={file} setFile={setFile} />}
             </div>
         </form>
+        <ImageGrid />
         </>
     )
 }

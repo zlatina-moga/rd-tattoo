@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Classes from './components/Classes/Classes';
-import UploadForm from './components/UploadForm/UploadForm';
+import UploadForm from './components/Gallery/UploadForm';
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
