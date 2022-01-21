@@ -1,11 +1,11 @@
 import { useState } from "react";
 import {useHistory} from 'react-router-dom';
-import { useNotificationContext, types } from "../../contexts/NotificationContext";
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Contact() {
     const [state, setState] = useState({feedback: '', name: 'Name', email: 'email@example.com'});
-    const history = useHistory()
-    const {addNotification} = useNotificationContext()
+    const history = useHistory();
+    const notify = () => toast('Email successfully sent!');
 
     const handleChange = (e) => {
         setState({feedback: e.currentTarget.value})
@@ -30,10 +30,12 @@ export default function Contact() {
             'service_zof2wa4', templateId,
             variables
         ).then (res => {
-            console.log('Email successfully sent!')
-            addNotification('Email successfully sent!', types.success)
-            //add cool notification window
-            //history.push('/gallery')
+            notify()
+
+            setTimeout(() => {
+                history.push('/gallery')
+            }, 2000)
+            
         }).catch(err => console.error('Sorry, something went wrong: ', err))
     }
 
@@ -55,6 +57,7 @@ export default function Contact() {
                           <textarea onChange={handleChange} defaultValue={state.feedback} className="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
 
                           <button type="submit" className="form-control" id="submit-button" name="submit">Send Message</button>
+                          <Toaster />
                       </form>
                   </div>
 

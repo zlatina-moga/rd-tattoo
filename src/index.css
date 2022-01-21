@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.classesInfo{
+  text-align: center;
+}
+
 /*gallery page*/
 
 .gallery{

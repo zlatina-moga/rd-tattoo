@@ -1,5 +1,3 @@
-import './Classes.css'
-
 export default function Classes() {
     return (
         <section className="class section" id="class">
@@ -23,7 +21,7 @@ export default function Classes() {
                                  <span><strong>Trained by</strong> - Rumen Dimov</span>
 
                                  <p className="mt-3">You will learn everything from setting up needles and skin preparation to tattoo technics and secrets.</p>
-                                 <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">Check availability</a>
+                                 <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">Get in touch</a>
 
                              </div>
                          </div>
@@ -53,7 +51,7 @@ export default function Classes() {
                                  <span><strong>Trained by</strong> - Rumen Dimov</span>
 
                                  <p className="mt-3">Learn the crucial skills needed to become a body piercing professional.</p>
-                                 <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">Check availability</a>
+                                 <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">Get in touch</a>
                              </div>
                          </div>
                      </div>
