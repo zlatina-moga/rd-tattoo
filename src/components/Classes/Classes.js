@@ -7,7 +7,7 @@ export default function Classes() {
                      <div className="col-lg-12 col-12 text-center mb-5 ">
                          <h6 data-aos="fade-up">new way to build a lifestyle!</h6>
 
-                         <h2 data-aos="fade-up" data-aos-delay="200">Our Training Classes</h2>
+                         <h2 data-aos="fade-up" data-aos-delay="200">Our Training Courses</h2>
                          
                       </div>
 
@@ -31,7 +31,7 @@ export default function Classes() {
                          <div className="class-thumb">
 
                              <div className="classesInfo">
-                                 <h3 className="mb-1">Tattoo and Piercing Classes</h3>
+                                 <h3 className="mb-1">Tattoo and Piercing Courses</h3>
 
                                  <span><strong>Trained by</strong> - Rumen Dimov</span>
 
