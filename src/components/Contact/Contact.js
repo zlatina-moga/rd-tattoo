@@ -47,7 +47,7 @@ export default function Contact() {
                   <div className="ml-auto col-lg-5 col-md-6 col-12">
                       <h2 className="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
 
-                      <form onSubmit={onSubmit} className="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                      <form onSubmit={onSubmit} className="contact-form webform" data-aos="fade-up" data-aos-delay="400">
                           <input type="text" className="form-control" name="cf-name" placeholder="Name" />
 
                           <input type="email" className="form-control" name="cf-email" placeholder="Email" />
@@ -67,7 +67,7 @@ export default function Contact() {
                       <p data-aos="fade-up" data-aos-delay="800"><i className="fa fa-map-marker mr-1"></i>Martinčekova 783/17 82101 Bratislava, Slovakia</p>
 
                       <div className="google-map" data-aos="fade-up" data-aos-delay="900">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.9302675734616!2d17.14851461564941!3d48.15014957922443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c892bd77ce2b9%3A0x1c1c1abc8856003c!2sMartin%C4%8Dekova%20783%2F17%2C%20821%2001%20Bratislava%2C%20Slovakia!5e0!3m2!1sen!2sro!4v1642746113117!5m2!1sen!2sro" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy"></iframe>
+                      <iframe title="RD Tattoo address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.9302675734616!2d17.14851461564941!3d48.15014957922443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c892bd77ce2b9%3A0x1c1c1abc8856003c!2sMartin%C4%8Dekova%20783%2F17%2C%20821%2001%20Bratislava%2C%20Slovakia!5e0!3m2!1sen!2sro!4v1642746113117!5m2!1sen!2sro" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy"></iframe>
                       </div>
                   </div>
                   
