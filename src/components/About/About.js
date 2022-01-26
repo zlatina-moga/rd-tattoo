@@ -1,19 +1,19 @@
+import { useTranslation } from "react-i18next";
+
 export default function About(){
+    const { t } = useTranslation();
     return (
         <section className="about section" id="about">
         <div className="container">
              <div className="row">
 
                      <div className="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
-                         <h2 className="mb-4" data-aos="fade-up" data-aos-delay="300">Welcome to RD Tattoo</h2>
+                         <h2 className="mb-4" data-aos="fade-up" data-aos-delay="300">{t("welcome_to_RD_tattoo")}</h2>
 
-                         <p data-aos="fade-up" data-aos-delay="400">Our goal is to be your friend and an ally in the ruthless and dynamic world of tattoos.
+                         <p data-aos="fade-up" data-aos-delay="400">{t("our_goal")}</p>
 
-                            You are welcome with an idea in mind, and we'll be happy to assist you.
-                            If you need inspiration, you can rely on us - we will prepare a unique sketch, tailored to your wish.</p>
-
-                         <p data-aos="fade-up" data-aos-delay="500">If you have any questions, you can <a rel="nofollow" href="tel:+421904540178" target="_parent">contact us</a> immediately.</p>
-                         <a href="tel:+421904540178" className="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm"><i className="fa fa-phone"></i> Make an appointment today</a>
+                         <p data-aos="fade-up" data-aos-delay="500">{t("if_you_have_questions")}<a rel="nofollow" href="tel:+421904540178" target="_parent">{t("contact_us")}</a> {t("immediately")}</p>
+                         <a href="tel:+421904540178" className="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm"><i className="fa fa-phone"></i> {t("make_appointment")}</a>
 
                      </div>
 
