@@ -11,18 +11,18 @@ import Gallery from './components/Gallery/Gallery';
 function App() {
   return (
     <div className="App">
-      <Navigation />
+        <Navigation />
 
-      <Switch>
-        <Route path='/' exact component={Home}/>
-        <Route path='/about' component={About}/>
-        <Route path='/contact' component={Contact}/>
-        <Route path='/classes' component={Classes} />
-        <Route path='/gallery' component={Gallery} />
-      </Switch>
+        <Switch>
+          <Route path='/' exact component={Home}/>
+          <Route path='/about' component={About}/>
+          <Route path='/contact' component={Contact}/>
+          <Route path='/classes' component={Classes} />
+          <Route path='/gallery' component={Gallery} />
+        </Switch>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
   );
 }
 
