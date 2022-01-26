@@ -7,7 +7,10 @@ export default function Navigation(){
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-
+            <section className='logoContainer'>
+                <img id='logoImg' src='/images/logo.jpeg' />
+            </section>
+           
             <a className="navbar-brand" href="/">RD TATTOO</a>
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"

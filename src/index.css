@@ -118,3 +118,11 @@ code {
   color: #F13A11;
 }
 
+#logoImg{
+  max-width: 40px;
+  width: 100%;
+}
+
+.logoContainer{
+  margin-right: 10px;
+}
