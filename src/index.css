@@ -114,3 +114,7 @@ code {
   border: 3px solid white;
 }
 
+#langChange:hover{
+  color: #F13A11;
+}
+

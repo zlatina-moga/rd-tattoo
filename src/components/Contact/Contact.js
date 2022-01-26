@@ -1,10 +1,12 @@
 import { useState } from "react";
 import {useHistory} from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
     const [state, setState] = useState({feedback: '', name: 'Name', email: 'email@example.com'});
     const history = useHistory();
+    const { t } = useTranslation();
     const notify = () => toast('Email successfully sent!');
 
     const handleChange = (e) => {
@@ -45,24 +47,24 @@ export default function Contact() {
              <div className="row">
 
                   <div className="ml-auto col-lg-5 col-md-6 col-12">
-                      <h2 className="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
+                      <h2 className="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">{t("ask_anything")}</h2>
 
                       <form onSubmit={onSubmit} className="contact-form webform" data-aos="fade-up" data-aos-delay="400">
-                          <input type="text" className="form-control" name="cf-name" placeholder="Name" />
+                          <input type="text" className="form-control" name="cf-name" placeholder={t("name")} />
 
                           <input type="email" className="form-control" name="cf-email" placeholder="Email" />
 
-                          <input type="tel" className="form-control" name="cf-phone" placeholder="Phone" />
+                          <input type="tel" className="form-control" name="cf-phone" placeholder={t("phone")} />
 
-                          <textarea onChange={handleChange} defaultValue={state.feedback} className="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+                          <textarea onChange={handleChange} defaultValue={state.feedback} className="form-control" rows="5" name="cf-message" placeholder={t("message")}></textarea>
 
-                          <button type="submit" className="form-control" id="submit-button" name="submit">Send Message</button>
+                          <button type="submit" className="form-control" id="submit-button" name="submit">{t("send_message")}</button>
                           <Toaster />
                       </form>
                   </div>
 
                   <div className="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
-                      <h2 className="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
+                      <h2 className="mb-4" data-aos="fade-up" data-aos-delay="600">{t("find_us")}</h2>
 
                       <p data-aos="fade-up" data-aos-delay="800"><i className="fa fa-map-marker mr-1"></i>Martinčekova 783/17 82101 Bratislava, Slovakia</p>
 

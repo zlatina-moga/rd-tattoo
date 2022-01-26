@@ -39,8 +39,8 @@ export default function Navigation(){
                     <li><a target="_blank" href="https://www.facebook.com/rdtattoois/" className="fa fa-facebook"></a></li>
                     <li><a target="_blank" href="https://www.instagram.com/rdtattooist/" className="fa fa-instagram"></a></li>
                     <li><a href="tel:+421904540178"><i className="fa fa-phone"></i></a></li>
-                    <li><a onClick={() => i18next.changeLanguage('en')} >EN</a></li>
-                    <li><a onClick={() => i18next.changeLanguage('sk')} >SK</a></li>
+                    <li><a id='langChange' onClick={() => i18next.changeLanguage('en')} >EN</a></li>
+                    <li><a id='langChange' onClick={() => i18next.changeLanguage('sk')} >SK</a></li>
                 </ul>
             </div>
 
