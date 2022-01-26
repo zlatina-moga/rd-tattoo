@@ -1,14 +1,15 @@
 import i18next from 'i18next' ;
 import { useTranslation } from "react-i18next";
+import { Link, withRouter } from 'react-router-dom';
 
-export default function Navigation(){
+const Navigation = () => {
     const { t } = useTranslation();
 
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
             <section className='logoContainer'>
-                <img id='logoImg' src='/images/logo.jpeg' />
+                <img id='logoImg' src='/images/logo.jpeg' alt='logo' />
             </section>
            
             <a className="navbar-brand" href="/">RD TATTOO</a>
@@ -21,20 +22,23 @@ export default function Navigation(){
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-lg-auto">
 
+        
+
                     <li className="nav-item">
-                        <a href="/about" className="nav-link smoothScroll">{t("about_us")}</a>
+                        <Link to="/about" className="nav-link smoothScroll">{t("about_us")}</Link>
+                    </li>
+        
+
+                    <li className="nav-item">
+                        <Link to="/classes" className="nav-link smoothScroll">{t("courses")}</Link>
                     </li>
 
                     <li className="nav-item">
-                        <a href="/classes" className="nav-link smoothScroll">{t("courses")}</a>
+                        <Link to="/gallery" className="nav-link smoothScroll">{t("gallery")}</Link>
                     </li>
 
                     <li className="nav-item">
-                        <a href="/gallery" className="nav-link smoothScroll">{t("gallery")}</a>
-                    </li>
-
-                    <li className="nav-item">
-                        <a href="/contact" className="nav-link smoothScroll">{t("contact")}</a>
+                        <Link to="/contact" className="nav-link smoothScroll">{t("contact")}</Link>
                     </li>
                 </ul>
 
@@ -51,3 +55,5 @@ export default function Navigation(){
     </nav>
     )
 }
+
+export default withRouter(Navigation)

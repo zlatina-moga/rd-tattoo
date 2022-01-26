@@ -1,4 +1,4 @@
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch, HashRouter} from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
@@ -10,9 +10,11 @@ import Gallery from './components/Gallery/Gallery';
 
 function App() {
   return (
+    
     <div className="App">
+      <HashRouter>
         <Navigation />
-
+        
         <Switch>
           <Route path='/' exact component={Home}/>
           <Route path='/about' component={About}/>
@@ -20,7 +22,7 @@ function App() {
           <Route path='/classes' component={Classes} />
           <Route path='/gallery' component={Gallery} />
         </Switch>
-
+        </HashRouter>
         <Footer />
       </div>
   );
