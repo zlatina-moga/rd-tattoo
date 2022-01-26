@@ -1,4 +1,9 @@
+import i18next from 'i18next' ;
+import { useTranslation } from "react-i18next";
+
 export default function Navigation(){
+    const { t } = useTranslation();
+
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
@@ -14,19 +19,19 @@ export default function Navigation(){
                 <ul className="navbar-nav ml-lg-auto">
 
                     <li className="nav-item">
-                        <a href="/about" className="nav-link smoothScroll">About Us</a>
+                        <a href="/about" className="nav-link smoothScroll">{t("about_us")}</a>
                     </li>
 
                     <li className="nav-item">
-                        <a href="/classes" className="nav-link smoothScroll">Courses</a>
+                        <a href="/classes" className="nav-link smoothScroll">{t("courses")}</a>
                     </li>
 
                     <li className="nav-item">
-                        <a href="/gallery" className="nav-link smoothScroll">Gallery</a>
+                        <a href="/gallery" className="nav-link smoothScroll">{t("gallery")}</a>
                     </li>
 
                     <li className="nav-item">
-                        <a href="/contact" className="nav-link smoothScroll">Contact</a>
+                        <a href="/contact" className="nav-link smoothScroll">{t("contact")}</a>
                     </li>
                 </ul>
 
@@ -34,6 +39,8 @@ export default function Navigation(){
                     <li><a target="_blank" href="https://www.facebook.com/rdtattoois/" className="fa fa-facebook"></a></li>
                     <li><a target="_blank" href="https://www.instagram.com/rdtattooist/" className="fa fa-instagram"></a></li>
                     <li><a href="tel:+421904540178"><i className="fa fa-phone"></i></a></li>
+                    <li><a onClick={() => i18next.changeLanguage('en')} >EN</a></li>
+                    <li><a onClick={() => i18next.changeLanguage('sk')} >SK</a></li>
                 </ul>
             </div>
 

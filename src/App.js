@@ -8,7 +8,6 @@ import Contact from './components/Contact/Contact';
 import Classes from './components/Classes/Classes';
 import Gallery from './components/Gallery/Gallery';
 
-
 function App() {
   return (
     <div className="App">
