@@ -52,9 +52,6 @@ export default function Home() {
 
                                     <p data-aos="fade-up" data-aos-delay="800">{t("by_appointment")}</p>
 
-                                    <strong className="d-block" data-aos="fade-up" data-aos-delay="600">{t("sunday")}</strong>
-
-                                    <p data-aos="fade-up" data-aos-delay="800">{t("by_appointment")}</p>
                                 </div>
                             </div>
                         </div>
