@@ -1,6 +1,5 @@
 import i18next from 'i18next' ;
 import { useTranslation } from "react-i18next";
-import { Link, withRouter } from 'react-router-dom';
 
 const Navigation = () => {
     const { t } = useTranslation();
@@ -22,23 +21,21 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-lg-auto">
 
-        
-
                     <li className="nav-item">
-                        <Link to="/about" className="nav-link smoothScroll">{t("about_us")}</Link>
+                        <a href="/about" className="nav-link smoothScroll">{t("about_us")}</a>
                     </li>
         
 
                     <li className="nav-item">
-                        <Link to="/classes" className="nav-link smoothScroll">{t("courses")}</Link>
+                        <a href="/classes" className="nav-link smoothScroll">{t("courses")}</a>
                     </li>
 
                     <li className="nav-item">
-                        <Link to="/gallery" className="nav-link smoothScroll">{t("gallery")}</Link>
+                        <a href="/gallery" className="nav-link smoothScroll">{t("gallery")}</a>
                     </li>
 
                     <li className="nav-item">
-                        <Link to="/contact" className="nav-link smoothScroll">{t("contact")}</Link>
+                        <a href="/contact" className="nav-link smoothScroll">{t("contact")}</a>
                     </li>
                 </ul>
 
@@ -56,4 +53,4 @@ const Navigation = () => {
     )
 }
 
-export default withRouter(Navigation)
+export default Navigation

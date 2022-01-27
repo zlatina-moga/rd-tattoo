@@ -1,4 +1,4 @@
-import { Route, Switch, HashRouter} from 'react-router-dom';
+import { Route, Switch} from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
@@ -12,19 +12,18 @@ function App() {
   return (
     
     <div className="App">
-      <HashRouter>
-        <Navigation />
-        
+      <Navigation/>
         <Switch>
+        
           <Route path='/' exact component={Home}/>
           <Route path='/about' component={About}/>
           <Route path='/contact' component={Contact}/>
           <Route path='/classes' component={Classes} />
           <Route path='/gallery' component={Gallery} />
+
         </Switch>
-        </HashRouter>
-        <Footer />
-      </div>
+      <Footer />
+    </div>
   );
 }
 
