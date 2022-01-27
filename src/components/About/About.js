@@ -19,7 +19,7 @@ export default function About(){
 
                      <div className="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
                          <div className="team-thumb">
-                             <img src="images/RD.jpeg" id="about-img" className="img-fluid" alt="Rumen Dimov" />
+                             <img src="images/RD.jpg" id="about-img" className="img-fluid" alt="Rumen Dimov" />
 
                              <div className="team-info d-flex flex-column">
 

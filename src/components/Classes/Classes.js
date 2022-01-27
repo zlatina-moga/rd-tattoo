@@ -53,7 +53,7 @@ export default function Classes() {
                         <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">{t("get_in_touch")}</a>
                     </div>
                          <div className="class-thumb">
-                             <img src="images/piercing.jpeg" className="img-fluid" alt="Class" />
+                             <img src="images/piercing.jpg" className="img-fluid" alt="Class" />
                          </div>
                      </div>
 
