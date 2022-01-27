@@ -16,19 +16,18 @@ export default function Classes() {
                       </div>
 
                      <div className="col-lg-4 col-md-6 col-12 classesInfo" data-aos="fade-up" data-aos-delay="400">
-                         <div className="class-thumb ">
-                             <img src="images/tattoo.jpeg" className="img-fluid" alt="Class" />
+                        <div className="class-info">
+                            <h3 className="mb-1">{t("tattoo_course")}</h3>
 
-                             <div className="class-info">
-                                 <h3 className="mb-1">{t("tattoo_course")}</h3>
+                            <span><strong>{t("trained_by")}</strong> - Rumen Dimov</span>
 
-                                 <span><strong>{t("trained_by")}</strong> - Rumen Dimov</span>
+                            <p className="mt-3">{t("tattoo_course_info")}</p>
+                            <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">{t("get_in_touch")}</a>
 
-                                 <p className="mt-3">{t("tattoo_course_info")}</p>
-                                 <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">{t("get_in_touch")}</a>
-
-                             </div>
-                         </div>
+                        </div>
+                        <div className="class-thumb ">
+                            <img src="images/tattoo.jpeg" className="img-fluid" alt="Class" />
+                        </div>
                      </div>
 
                      <div className="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
@@ -46,17 +45,15 @@ export default function Classes() {
                      </div>
 
                      <div className="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12 classesInfo" data-aos="fade-up" data-aos-delay="600">
+                     <div className="class-info">
+                        <h3 className="mb-1">{t("piercing_course")}</h3>
+                        <span><strong>{t("trained_by")}</strong> - Rumen Dimov</span>
+
+                        <p className="mt-3">{t("learn_crucial_skills")}</p>
+                        <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">{t("get_in_touch")}</a>
+                    </div>
                          <div className="class-thumb">
                              <img src="images/piercing.jpeg" className="img-fluid" alt="Class" />
-
-                             <div className="class-info">
-                                 <h3 className="mb-1">{t("piercing_course")}</h3>
-
-                                 <span><strong>{t("trained_by")}</strong> - Rumen Dimov</span>
-
-                                 <p className="mt-3">{t("learn_crucial_skills")}</p>
-                                 <a className="btn custom-btn bg-color mt-3" href="mailto:rdtats@gmail.com">{t("get_in_touch")}</a>
-                             </div>
                          </div>
                      </div>
 
