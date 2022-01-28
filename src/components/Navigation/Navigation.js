@@ -7,7 +7,7 @@ const Navigation = () => {
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-            <section className='logoContainer'>
+            <section id='logoContainer'>
                 <img id='logoImg' src='/images/logo.jpeg' alt='logo' />
             </section>
            

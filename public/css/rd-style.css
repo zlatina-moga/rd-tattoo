@@ -618,7 +618,7 @@
 
   @media screen and (max-width: 992px) {
 
-    .logoContainer{
+    #logoContainer{
       display: none;
     }
 
@@ -653,7 +653,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    .logoContainer{
+    #logoContainer{
       display: none;
     }
 
