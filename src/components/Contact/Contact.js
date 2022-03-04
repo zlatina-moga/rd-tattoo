@@ -16,7 +16,7 @@ export default function Contact() {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        const templateId = 'template_urtsbj7';
+        const templateId = '*******';
 
         const formData = new FormData(e.currentTarget);
         let name = formData.get('cf-name');
@@ -29,7 +29,7 @@ export default function Contact() {
 
     const sendFeedback = (templateId, variables) => {
         window.emailjs.send(
-            'service_zof2wa4', templateId,
+            '*******', templateId,
             variables
         ).then (res => {
             notify()
